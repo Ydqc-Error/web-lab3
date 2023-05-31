@@ -1,0 +1,13 @@
+<form (ngSubmit)="login()">
+    <label for="username">Username:</label>
+    <input id="username" name="username" [(ngModel)]="user.username" required>
+    <label for="password">Password:</label>
+    <input id="password" name="password" [(ngModel)]="user.password" type="password" required>
+    <button type="submit">Login</button>
+</form>
+<p>
+    <button (click)="allUsers()">Show All Users</button>
+</p>
+<p>
+    {{ usersname }}
+</p>
